@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+  </head>
+  <body>
+    <section class="wrapper">
+      <!-- <div class="image">
+            <img src="https://i.pinimg.com/1200x/8e/67/a4/8e67a40ea93d94751d98e19055165ef9.jpg" alt="">
+      </div> -->
+
+      <div class="bank">
+        <div class="bal">
+          <div class="full">
+            <i class="fa-solid fa-wallet" style="color: rgb(0, 0, 0);"></i>
+            <h3>Total Balance</h3>
+          </div>
+          <div class="money">
+            <h1>$</h1>
+            <h2></h2>
+          </div>
+          <div class="transfer">
+            <button>Transfer</button>
+            <button>Request</button>
+          </div>
+        </div>
+        <div class="credit">
+          <img src="https://i.pinimg.com/736x/ab/6c/c6/ab6cc6e333099d11f3af3d67823e28f9.jpg" alt="">
+        </div>
+      </div>
+        
+      <div class="expense">
+
+        <div class="input">
+          <input id="name"  type="text" placeholder="Expense Name" />
+          <input id="amt" type="number" placeholder="Amount" />
+          <select class="list">
+            <option value="Food">Food</option>
+            <option  value="Transport">Transport</option>
+            <option value="Textiles">Textiles</option>
+            <option value="Game">Game</option>
+          </select>
+          <input id="date" type="date"/>
+          <button class="bttn">Add Expense</button>
+        </div>
+
+
+            <div class="data">
+                <table class="myTable">
+              <tr>
+                <th>Expense Name</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+             </table>
+              
+            </div>
+            <div class="total">
+                <div class="cal">
+                    <h2>Total: </h2>
+                    <p></p>
+                </div>
+                <div class="filter">
+                    <p>Filter by Category: </p>
+                    <select class="select">
+                        <option value="All">All</option>
+                        <option value="low">Low-High</option>
+                        <option value="high">High-Low</option>
+                        <option value="price">Price</option>
+                    </select>
+                </div>
+            </div>
+      </div>
+
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
